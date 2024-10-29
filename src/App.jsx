@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage';
 import SecondHandMobiles from './pages/SecondHandMobiles';
 import Accessories from './pages/Accessories';
 import Contact from './pages/Contact';
-import './styles/global.css';
+import './index.css';
 
 
 function App() {
