@@ -27,8 +27,8 @@ const AdminDashboard = () => {
       const fetchData = async () => {
         try {
           const [ordersResponse, contactsResponse] = await Promise.all([
-            axios.get('http://localhost:5000/api/orders'),
-            axios.get('http://localhost:5000/api/contacts')
+            axios.get('https://vikas-be.onrender.com/api/orders'),
+            axios.get('https://vikas-be.onrender.com/api/contacts')
           ]);
           setOrders(ordersResponse.data);
           setContacts(contactsResponse.data);
@@ -134,7 +134,7 @@ const AddProductForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/products', {
+      await axios.post('https://vikas-be.onrender.com/api/products', {
         name,
         price: parseFloat(price),
         image,

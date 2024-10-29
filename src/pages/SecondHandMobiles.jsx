@@ -12,7 +12,7 @@ const SecondHandMobiles = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/products?category=mobile');
+        const response = await axios.get('https://vikas-be.onrender.com/api/products?category=mobile');
         setProducts(response.data);
         setLoading(false);
       } catch (error) {

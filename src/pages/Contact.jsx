@@ -14,7 +14,7 @@ const Contact = () => {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/contacts', 
+        'https://vikas-be.onrender.com/api/contacts', 
         { name, email, message }, 
         { headers: { 'Content-Type': 'application/json' } } // Ensure JSON format
       );

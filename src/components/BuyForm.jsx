@@ -10,7 +10,7 @@ const BuyForm = ({ productId, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/orders', {
+      await axios.post('https://vikas-be.onrender.com/api/orders', {
         productId,
         name,
         phoneNumber,

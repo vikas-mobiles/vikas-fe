@@ -12,7 +12,7 @@ const Accessories = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/products?category=accessory');
+        const response = await axios.get('https://vikas-be.onrender.com/api/products?category=accessory');
         setProducts(response.data);
         setLoading(false);
       } catch (error) {
