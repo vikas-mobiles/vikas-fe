@@ -6,15 +6,16 @@ import HomePage from './pages/HomePage';
 import SecondHandMobiles from './pages/SecondHandMobiles';
 import Accessories from './pages/Accessories';
 import Contact from './pages/Contact';
-import AdminDashboard from './pages/AdminDashboard';
+import './styles/global.css';
 
-const App = () => {
+
+function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen font-roboto">
         <Header />
         <main className="flex-grow container mx-auto px-4 py-8">
-          <Routes>
+        <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/phones" element={<SecondHandMobiles />} />
             <Route path="/accessories" element={<Accessories />} />
@@ -26,6 +27,6 @@ const App = () => {
       </div>
     </Router>
   );
-};
+}
 
 export default App;

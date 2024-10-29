@@ -1,21 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#3498db',
-        secondary: '#2ecc71',
-        accent: '#e74c3c',
-        background: '#ecf0f1',
-        text: '#2c3e50',
-      },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
-        heading: ['Poppins', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
       },
     },
   },
